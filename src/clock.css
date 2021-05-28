@@ -1,0 +1,13 @@
+.clock {
+  width: 800px;
+  height: 100px;
+  position: static;
+  margin: 50px;
+  font-family: Courier, monospace;
+  text-align: center;
+  text-shadow: 0 0 6px #000;
+  color: rgb(194, 187, 187);
+  letter-spacing: 20px;
+  user-select: none;
+  font-size: 6rem;
+}

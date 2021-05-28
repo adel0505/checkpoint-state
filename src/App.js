@@ -23,8 +23,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Clock />
-
+        <Button variant="primary" onClick={this.handleShowPerson}>
+          Show
+        </Button>
+        <br></br>
         {this.state.show && (
           <Card style={{ width: "18rem" }}>
             <Card.Img variant="top" src={this.state.Person.imgSrc} />
@@ -33,12 +35,13 @@ class App extends React.Component {
               <Card.Subtitle>{this.state.Person.profession}</Card.Subtitle>
               <Card.Text>{this.state.Person.bio}</Card.Text>
             </Card.Body>
+            <Card.Footer>
+              <Card.Text>
+                <Clock />
+              </Card.Text>
+            </Card.Footer>
           </Card>
         )}
-        <br></br>
-        <Button variant="primary" onClick={this.handleShowPerson}>
-          Show
-        </Button>
       </div>
     );
   }
